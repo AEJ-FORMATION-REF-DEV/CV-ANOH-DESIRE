@@ -1,0 +1,202 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+}
+body{
+    background-color: #444;
+    font-size: 14px;
+    line-height: 22px;
+    color: #fff;
+} 
+.bold{
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.semi_bold{
+    font-size: 16px;
+    font-weight: 600;
+}
+.cv{
+    width: 800px;
+    height: auto;
+    display: flex;
+    margin: 50px auto;
+}
+.cv .cv_gauche{
+    width: 280px;
+    background-color:blue;
+}
+.cv .cv_gauche .cv_profil{
+    width: 100%;
+    height: 350px;
+}
+.cv .cv_gauche .cv_profil img{
+    width: 70%;
+    border-radius: 800px;
+    margin-top: 1.6rem;
+    height: 80%;
+}
+.cv .cv_gauche .cv_contenu{
+    padding: 0 25px;
+    padding-top: 10px;
+    border-left: blue;
+}
+.cv .titre{
+    margin: 20px 0;
+}
+.cv .bold{
+    color:black;
+}
+.cv .semi_bold {
+    color:black;
+    opacity: 0,6;
+}
+.cv .cv_article{
+    padding: 20px 0;
+    border-bottom: 2px solid blue;
+}
+.cv .cv_article:last-child{
+    border-bottom: 0px;
+}
+.cv .cv_gauche ul li{
+    display: flex;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.cv .cv_gauche ul li:last-child  {
+    margin-bottom: 0px;
+}
+.cv .cv_gauche ul li .icon{
+    width: 30px;
+    height: 30px;
+    color: blue;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-right: 15px;
+    font-size: 16px;
+    position: relative;
+}
+.cv .cv_droit .cv_loisir ul li i,
+.cv .icon i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.cv .cv_gauche .cv_compentence ul li{
+    justify-content: space-between;
+}
+.cv .cv_gauche .cv_compentence .competence_progress span{
+    content: 0PX;
+    background-color: #fff;
+    height: 20px;
+}
+.cv .cv_gauche .cv_compentence ul li .nom_competence{
+    width: 25%;
+}
+.cv .cv_gauche .cv_compentence ul li .competence_progress{
+    width: 60%;
+    margin: 0.5px;
+    height: 5px;
+    background: #fff;
+    position: relative;
+}
+.cv .cv_gauche .cv_compentence ul li .competence_progress span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(2,100,100);
+    opacity: 0,7;
+    height: 100%;
+}
+.cv .cv_gauche .cv_compentence ul li .compentence_pourcentage{
+    width: 15%;
+}
+.cv .fond{
+    background-color:blue;
+}
+.cv .cv_droit{
+    width: 520px;
+    border-top-left-radius: 150px;
+    border-bottom-left-radius: 150px;
+    background-color:white;
+    color: #444;
+    padding: 25px;
+}
+.cv .cv_droit .bold{
+    color: blue;
+}
+.cv .cv_droit .cv_travail ul,
+.cv .cv_droit .cv_formation ul{
+    padding-left: 40px;
+    overflow: hidden;
+}
+.cv .cv_droit ul li{
+    position: relative;
+}
+.cv .cv_droit ul li .date{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.cv .cv_droit ul li .info{
+    margin-bottom: 15px;
+}
+.cv .cv_droit ul li:last-child .info{
+    margin-bottom: 0;
+}
+.cv .cv_droit .cv_travail ul li::before,
+.cv .cv_droit .cv_formation ul li::before{
+    content: "";
+    position: relative;
+    top: 5px;
+    left: -23px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 3px solid blue;
+}
+.cv .cv_droit .cv_formation ul li::after,
+.cv .cv_droit .cv_travail ul li::after{
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: -21px;
+    width: 3px;
+    height: 133px;
+    background: blue;
+}
+
+.cv .cv_droit .cv_loisir ul{
+    display: flex;
+    justify-content: space-between;
+}
+.cv .cv_droit .cv_loisir ul li{
+    width: 80px;
+    height: 80px;
+    border: 2px solid blue;
+    border-radius: 50%;
+    background:#fff;
+    color:blue;
+}
+.cv .cv_droit .cv_loisir ul li i{
+    font-size: 30px;
+}
+.cv .cv_droit .cv_loisir ul li::before{
+    content: "";
+    position: absolute;
+    top: 40px;
+    right: -52px;
+    width: 50px;
+    height: 2px;
+    background:blue;
+}
+.cv .cv_droit .cv_loisir ul li:last-child::before{
+    visibility: hidden;
+}
